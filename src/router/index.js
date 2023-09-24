@@ -17,6 +17,14 @@ const router = createRouter({
       component: () => import('@/views/Dashboard.vue')
     },
     {
+      path: '/comments',
+      name: 'Comments',
+      meta: {
+        requiresAuth: true
+      },
+      component: () => import('@/views/Comments.vue')
+    },
+    {
       path: '/auth',
       name: 'auth',
       meta: {

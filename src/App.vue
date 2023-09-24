@@ -12,7 +12,8 @@
           :key="i"
           :to="{ path: item.href }"
           color="primary"
-        >
+
+          >
           <template v-slot:prepend>
             <v-icon :icon="item.icon"></v-icon>
           </template>
@@ -48,6 +49,7 @@ export default {
   data: () => ({
     navigations: [
       { text: 'Dashboard', href: '/', icon: 'mdi-home' },
+      { text: 'Comments', href: '/comments', icon: 'mdi-comment-text-multiple' },
       { text: 'Shared', href: '/auth', icon: 'mdi-account' }
     ]
   }),
@@ -57,7 +59,6 @@ export default {
       this.$router.push({ path: '/auth' })
     },
     toggleTheme() {
-      console.log(this.$vuetify.theme.global.name)
       this.$vuetify.theme.global.name = this.$vuetify.theme.global.current.dark ? 'light' : 'dark'
     }
   }
