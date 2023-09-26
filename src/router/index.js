@@ -25,6 +25,22 @@ const router = createRouter({
       component: () => import('@/views/Comments.vue')
     },
     {
+      path: '/albums',
+      name: 'Albums',
+      meta: {
+        requiresAuth: true
+      },
+      component: () => import('@/views/Albums.vue')
+    },
+    {
+      path: '/photos',
+      name: 'Photos',
+      meta: {
+        requiresAuth: true
+      },
+      component: () => import('@/views/Photos.vue')
+    },
+    {
       path: '/auth',
       name: 'auth',
       meta: {

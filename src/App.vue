@@ -50,6 +50,8 @@ export default {
     navigations: [
       { text: 'Dashboard', href: '/', icon: 'mdi-home' },
       { text: 'Comments', href: '/comments', icon: 'mdi-comment-text-multiple' },
+      { text: 'Albums', href: '/albums', icon: 'mdi-image-album' },
+      { text: 'Photos', href: '/photos', icon: 'mdi-camera' },
       { text: 'Shared', href: '/auth', icon: 'mdi-account' }
     ]
   }),
