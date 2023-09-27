@@ -52,6 +52,7 @@ export default {
       { text: 'Comments', href: '/comments', icon: 'mdi-comment-text-multiple' },
       { text: 'Albums', href: '/albums', icon: 'mdi-image-album' },
       { text: 'Photos', href: '/photos', icon: 'mdi-camera' },
+      { text: 'Users', href: '/users', icon: 'mdi-card-account-details' },
       { text: 'Shared', href: '/auth', icon: 'mdi-account' }
     ]
   }),

@@ -41,6 +41,14 @@ const router = createRouter({
       component: () => import('@/views/Photos.vue')
     },
     {
+      path: '/users',
+      name: 'Users',
+      meta: {
+        requiresAuth: true
+      },
+      component: () => import('@/views/Users.vue')
+    },
+    {
       path: '/auth',
       name: 'auth',
       meta: {
