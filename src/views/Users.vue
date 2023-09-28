@@ -18,6 +18,9 @@
         item-value="name"
         @update:options="loadItems"
       >
+        <template #item.address="{ item }" >
+          {{ item.selectable.address.city }}
+        </template>
         <template #item.actions="{ item }">
           <v-btn
             icon="mdi-eye"
@@ -165,9 +168,9 @@ export default {
       },
       { title: 'Email', key: 'email', align: 'start' },
       { title: 'Name', key: 'name', align: 'start' },
+      { title: 'City', key: 'address', align: 'start' },
       { title: 'Phone', key: 'phone', align: 'start' },
       { title: 'Username', key: 'username', align: 'start' },
-      { title: 'Website', key: 'website', align: 'start' },
       { title: 'Actions', key: 'actions', align: 'start' }
     ],
     serverItems: [],
